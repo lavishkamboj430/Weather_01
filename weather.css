@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.outer{
+    width:420px;
+    padding:30px;
+    border-radius:22px;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(30px);
+    -webkit-backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.35),
+    inset 0 1px 1px rgba(255,255,255,0.4),
+    inset 0 -1px 1px rgba(0,0,0,0.1);
+
+    transition:0.35s;
+}
+
+.outer:hover{
+    transform:translateY(-6px);
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.Nav{
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.input_logo{
+    display:flex;
+    align-items:center;
+}
+
+img{
+    height:24px;
+    filter:brightness(1.3);
+}
+
+.location{
+    font-size:18px;
+    font-weight:600;
+    margin-left:10px;
+    color:rgb(19, 19, 19);
+}
+
+.btn{
+    border:none;
+    padding:6px 14px;
+    border-radius:20px;
+    cursor:pointer;
+
+    background:rgba(255,255,255,0.18);
+    color:white;
+
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.3);
+
+    transition:0.25s;
+}
+
+.btn:hover{
+    background:rgba(255,255,255,0.35);
+}
+
+.show_temp{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:30px 0;
+}
+
+.temp{
+    font-size:70px;
+    font-weight:700;
+    color:white;
+}
+
+.weather{
+    font-size:20px;
+    color:rgba(255,255,255,0.8);
+    margin-top:6px;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:25px;
+}
+
+.data{
+    text-align:center;
+    padding:10px 16px;
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    transition:0.3s;
+}
+
+.data:hover{
+    background:rgba(255,255,255,0.18);
+}
+
+.title{
+    font-size:13px;
+    color:rgba(255,255,255,0.7);
+}
+
+.value{
+    font-size:20px;
+    font-weight:600;
+    margin-top:5px;
+    color:white;
+}
+
+.Location_image{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
